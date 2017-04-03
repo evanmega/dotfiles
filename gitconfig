@@ -1,14 +1,14 @@
 [user]
-	email = ginman86@gmail.com
-	name = Greg Inman
+  email = megae@aetna.com
+	name = Evan Mega
 [core]
-	excludesfile = /Users/A786391/.gitignore
+	excludesfile = /Users/A781653/.gitignore
 	editor = /usr/bin/vim
 [difftool "sourcetree"]
-	cmd = /usr/local/bin/ksdiff -w \"$LOCAL\" \"$REMOTE\"
+	cmd = opendiff \"$LOCAL\" \"$REMOTE\"
 	path = 
 [mergetool "sourcetree"]
-	cmd = 
+	cmd = /Applications/SourceTree.app/Contents/Resources/opendiff-w.sh \"$LOCAL\" \"$REMOTE\" -ancestor \"$BASE\" -merge \"$MERGED\"
 	trustExitCode = true
 [alias]
   # one-line log
@@ -52,4 +52,5 @@
 	prompt = false
 [diff]
 	tool = Kaleidoscope
-
+[alias]
+  pu = "![[ $(git config \"branch.$(git rev-parse --abbrev-ref HEAD).merge\") = '' ]] && git push -u || git push"

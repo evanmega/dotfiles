@@ -41,3 +41,5 @@ function iterm2_print_user_vars() {
 }
 
 exec `defaults write NSGlobalDomain KeyRepeat -int 0`
+
+set -o vi 

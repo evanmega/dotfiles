@@ -1,11 +1,7 @@
 let g:netrw_dirhistmax  =10
-let g:netrw_dirhist_cnt =9
-let g:netrw_dirhist_1='/Users/A786391/.docker'
-let g:netrw_dirhist_2='/Users/A786391/.docker/machine'
-let g:netrw_dirhist_3='/Users/A786391/.docker/machine/machines'
-let g:netrw_dirhist_4='/Users/A786391/.docker/machine/machines/dev'
-let g:netrw_dirhist_5='/Users/A786391/.vim'
-let g:netrw_dirhist_6='/Users/A786391/dev/mc-web/app'
-let g:netrw_dirhist_7='/Users/A786391/dev/mc-web/app/modules/account/my_profile'
-let g:netrw_dirhist_8='/Users/A786391/dev/mc-web/e2e'
-let g:netrw_dirhist_9='/Users/A786391/dev/mc-web/e2e/tests/login'
+let g:netrw_dirhist_cnt =5
+let g:netrw_dirhist_1='/Users/A781653/Documents/Code/MC/mc-web/e2e/tests'
+let g:netrw_dirhist_2='/Users/A781653/Documents/Code/MC/mc-web/e2e/tests/claims'
+let g:netrw_dirhist_3='/Users/A781653/Documents/Code/MC/mc-web/e2e/tests'
+let g:netrw_dirhist_4='/Users/A781653/Documents/Code/MC/mc-web/e2e/tests/claims'
+let g:netrw_dirhist_5='/Users/A781653/Documents/Code/MC/mc-web/e2e/tests/home'
