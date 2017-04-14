@@ -1,0 +1,35 @@
+{
+	"bootstrapped": true,
+	"in_process_packages":
+	[
+	],
+	"installed_packages":
+	[
+		"Arduino-like IDE",
+		"AutoWrap",
+		"Babel",
+		"Emmet",
+		"FileHeader",
+		"FindResultsApplyChanges",
+		"MoveTab",
+		"Open",
+		"Open-Include",
+		"Package Control",
+		"PackageResourceViewer",
+		"Predawn",
+		"rsub",
+		"Sass",
+		"SASS Build",
+		"SFTP",
+		"StandardFormat",
+		"sublime-text-fold-imports",
+		"SublimeLinter",
+		"SublimeLinter-contrib-standard",
+		"SublimeLinter-jsxhint",
+		"SublimeOnSaveBuild"
+	],
+	"repositories":
+	[
+		"https://github.com/davidyorr/sublime-text-fold-imports"
+	]
+}

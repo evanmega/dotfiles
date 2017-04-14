@@ -1,0 +1,4 @@
+{
+    "filename_filter": "(/|\\\\|^)(?!_)(\\w+)\\.(css|js|sass|less|scss)$",
+    "build_on_save": 1
+}

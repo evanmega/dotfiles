@@ -1,0 +1,9 @@
+2013-09-10 18:00:43
+Traceback (most recent call last):
+  File "./sftp/threads.py", line 15, in run_with_except_hook
+  File "./sftp/commands.py", line 1878, in run
+  File "/System/Library/Frameworks/Python.framework/Versions/2.6/lib/python2.6/shutil.py", line 204, in rmtree
+    onerror(os.listdir, path, sys.exc_info())
+  File "/System/Library/Frameworks/Python.framework/Versions/2.6/lib/python2.6/shutil.py", line 202, in rmtree
+    names = os.listdir(path)
+OSError: [Errno 2] No such file or directory: '/Users/evanmega/Downloads/public_html/'

@@ -1,0 +1,50 @@
+[
+	{
+		"caption": "Find",
+		"id": "find",
+		"children":
+		[
+			{"caption":"-"},
+			{
+				"caption": "Find Results - Apply Changes",
+				"command": "find_results_apply_changes"
+			}
+		]
+	},
+	{
+		"caption": "Preferences",
+		"mnemonic": "n",
+		"id": "preferences",
+		"children":
+		[
+			{
+				"caption": "Package Settings",
+				"mnemonic": "P",
+				"id": "package-settings",
+				"children":
+				[
+					{
+						"caption": "FindResultsApplyChanges",
+						"children":
+						[
+							{
+								"command": "open_file", "args":
+								{
+									"file": "${packages}/FindResultsApplyChanges/FindResultsApplyChanges.sublime-settings"
+								},
+								"caption": "Settings – Default"
+							},
+							{
+								"command": "open_file", "args":
+								{
+									"file": "${packages}/User/FindResultsApplyChanges.sublime-settings"
+								},
+								"caption": "Settings – User"
+							},
+						]
+					}
+				]
+			}
+		]
+	}
+]
