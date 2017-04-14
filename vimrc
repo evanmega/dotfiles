@@ -18,7 +18,8 @@ set foldmethod=indent
 set nofoldenable
 set ignorecase        " Makes search case-insensitive
 set smartcase         " Makes caps required
-color predawn
+" color predawn
+color vice
 
 set hlsearch          " highlight search matches
 set incsearch         " incremental searching
@@ -160,3 +161,12 @@ augroup reload_vimrc " {
     autocmd BufWritePost $MYVIMRC source $MYVIMRC
 augroup END " }
 set number
+
+"""""""""""""""""
+" weird screen issues w tmux?
+"""""""""""""""""
+if &term =~ '256color'
+  " disable Background Color Erase (BCE)
+  set t_ut=
+endif
+

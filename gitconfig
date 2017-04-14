@@ -1,8 +1,8 @@
 [user]
-  email = megae@aetna.com
+  email = evan.mega1@gmail.com
 	name = Evan Mega
 [core]
-	excludesfile = /Users/A781653/.gitignore
+	excludesfile = /Users/evan/.gitignore_global
 	editor = /usr/bin/vim
 [difftool "sourcetree"]
 	cmd = opendiff \"$LOCAL\" \"$REMOTE\"
