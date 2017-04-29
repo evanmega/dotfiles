@@ -42,4 +42,13 @@ function iterm2_print_user_vars() {
 
 exec `defaults write NSGlobalDomain KeyRepeat -int 0`
 
-set -o vi 
+set -o vi
+
+# note selection function, opens with vim
+function editNote() {
+  cd ~/Google\ Drive/notes/
+  echo "select file:"
+  select d in *.txt; do test -n "$d" && break; echo ">>> Invalid Selection"; done
+  vim "$d"
+}
+export -f editNote

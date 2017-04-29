@@ -139,9 +139,27 @@ let g:ctrlp_user_command = ['.git/', 'cd %s && git ls-files --exclude-standard -
 """""""""""""""""
 " ack / ag settings
 """""""""""""""""
-if executable('ag')
-  let g:ackprg = 'ag --vimgrep'
+" for silver surfer (switched to ripgrep)
+  "***ran into errors when big files present
+  "ERR expected to read <num> bytes but read <num>
+" if executable('ag')
+  " let g:ackprg = 'ag --vimgrep'
+" endif
+
+" if executable('rg')
+  " set grepprg=rg\ --color=never
+  " let g:ctrlp_user_command = 'rg %s --files --color=never --glob ""'
+  " let g:ctrlp_use_caching = 0
+" endif
+
+if executable("rg")
+  set grepprg=rg\ --vimgrep\ --no-heading
+  set grepformat=%f:%l:%c:%m,%f:%l:%m
+  " smart-case set's -i automatically (case-insensitive flag) if no uppercase
+  " characters present in search string
+  let g:ackprg = 'rg --smart-case --vimgrep --no-heading'
 endif
+
 cabbrev Ack Ack!
 nnoremap <leader>f :Ack!<space>
 
