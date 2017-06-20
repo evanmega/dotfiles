@@ -1,4 +1,5 @@
 export NVM_DIR=~/.nvm
+export EDITOR='vim'
 source $(brew --prefix nvm)/nvm.sh
 source /usr/local/opt/nvm/nvm.sh
 
@@ -14,6 +15,8 @@ export PATH=$PATH:'~/bin'
 export AWS_DEFAULT_PROFILE="soke"
 
 export ANDROID_HOME=/usr/local/opt/android-sdk
+
+alias gco='git checkout'
 
 if [ -f `brew --prefix`/etc/bash_completion ]; then
     . `brew --prefix`/etc/bash_completion
@@ -52,3 +55,4 @@ function editNote() {
   vim "$d"
 }
 export -f editNote
+source /usr/local/opt/nvm/nvm.sh
