@@ -1,0 +1,14 @@
+"*":
+  core:
+    telemetryConsent: "limited"
+    themes: [
+      "aesthetic-ui"
+      "redmond-syntax"
+    ]
+  editor:
+    fontFamily: "Source Code Pro"
+    fontSize: 13
+  "exception-reporting":
+    userId: "da441bca-a1be-40bb-95c9-83eca67879b2"
+  welcome:
+    showOnStartup: false
