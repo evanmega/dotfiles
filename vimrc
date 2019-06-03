@@ -177,6 +177,7 @@ vnoremap x "_x
 " add 2 lines:
 " 80 dashes
 " todays date with format > Thu, 01/02/19
+"
 nnoremap <C-n><C-d> 80i-<Esc><CR>i<C-R>=strftime("%a, %m/%d/%y")<Esc><CR>
 
 " allow auto source for updates to vimrc
