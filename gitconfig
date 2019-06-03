@@ -54,3 +54,5 @@
 	tool = Kaleidoscope
 [alias]
   pu = "![[ $(git config \"branch.$(git rev-parse --abbrev-ref HEAD).merge\") = '' ]] && git push -u || git push"
+[credential]
+	helper = osxkeychain
