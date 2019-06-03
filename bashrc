@@ -17,6 +17,8 @@ export AWS_DEFAULT_PROFILE="soke"
 export ANDROID_HOME=/usr/local/opt/android-sdk
 
 alias gco='git checkout'
+alias py='python'
+alias jobhunt='cd /Users/evan/Google\ Drive/onmygrind/2019'
 
 if [ -f `brew --prefix`/etc/bash_completion ]; then
     . `brew --prefix`/etc/bash_completion

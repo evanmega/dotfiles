@@ -174,6 +174,9 @@ nmap ;O O<Esc>j
 nnoremap x "_x
 vnoremap x "_x
 
+" add dash separator + today's date
+nnoremap <C-n><C-d> 80i-<Esc><CR>i<C-R>=strftime("%a, %m/%d/%y")<Esc><CR>
+
 " allow auto source for updates to vimrc
 augroup reload_vimrc " {
     autocmd!
