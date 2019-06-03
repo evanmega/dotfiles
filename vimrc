@@ -174,7 +174,9 @@ nmap ;O O<Esc>j
 nnoremap x "_x
 vnoremap x "_x
 
-" add dash separator + today's date
+" add 2 lines:
+" 80 dashes
+" todays date with format > Thu, 01/02/19
 nnoremap <C-n><C-d> 80i-<Esc><CR>i<C-R>=strftime("%a, %m/%d/%y")<Esc><CR>
 
 " allow auto source for updates to vimrc
