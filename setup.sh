@@ -10,7 +10,7 @@ if [[ "$unamestr" == 'Darwin' ]]; then
   /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
   brew install CMake
   brew install tmux
-  brew install macvim --override-system-vim
+  brew install macvim -- --override-system-vim
   brew install node
   brew install kdiff3
   brew install the_silver_searcher
