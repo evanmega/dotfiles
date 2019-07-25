@@ -65,10 +65,13 @@ Plugin 'Valloric/YouCompleteMe'
 Plugin 'ntpeters/vim-better-whitespace'
 Plugin 'mattn/emmet-vim'
 Plugin 'ctrlpvim/ctrlp.vim'
-Plugin 'Raimondi/delimitMate'
+Plugin 'Raimondi/delimitMate' " do I use this? does it even work?
 Plugin 'gioele/vim-autoswap'
 Plugin 'mileszs/ack.vim'
 Plugin 'ternjs/tern_for_vim'
+Plugin 'godlygeek/tabular'
+Plugin 'plasticboy/vim-markdown'
+Plugin 'JamshedVesuna/vim-markdown-preview'
 
 " after delimitMate adds a bracket or whatever, can hit
 " ctrl + c to split lines
@@ -105,6 +108,8 @@ let g:syntastic_html_tidy_exec = 'tidy5'
 """""""""""""""""
 " vimBetterWhitespace settings
 """""""""""""""""
+" let g:better_whitespace_filetypes_blacklist=['<filetype1>', '<filetype2>', '<etc>']
+" let g:better_whitespace_filetypes_blacklist=['diff', 'gitcommit', 'unite', 'qf', 'help', 'markdown']
 autocmd BufEnter * EnableStripWhitespaceOnSave
 
 """""""""""""""""
@@ -164,6 +169,16 @@ endif
 cabbrev Ack Ack!
 nnoremap <leader>f :Ack!<space>
 
+
+"""""""""""""""""
+" markdown settings
+"""""""""""""""""
+let vim_markdown_preview_hotkey='<C-m>'
+let vim_markdown_preview_browser='Google Chrome'
+let vim_markdown_preview_perl=1
+" Open markdown files with Chrome.
+autocmd BufEnter *.md exe 'noremap <F5> :!open -a "Google Chrome.app" %:p<CR>'
+
 " EVAN
 nnoremap E $
 nnoremap B 0
@@ -177,7 +192,7 @@ vnoremap x "_x
 " add 2 lines:
 " 80 dashes
 " todays date with format > Thu, 01/02/19
-nnoremap <C-n><C-d> 80i-<Esc><CR>i<C-R>=strftime("%a, %m/%d/%y")<Esc><CR>
+nnoremap <S-n><S-d> 80i-<Esc><CR>i<C-R>=strftime("%a, %m/%d/%y")<Esc><CR>
 
 " allow auto source for updates to vimrc
 augroup reload_vimrc " {
