@@ -10,6 +10,7 @@ if [[ "$unamestr" == 'Darwin' ]]; then
   /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
   brew install CMake
   brew install tmux
+  brew install reattach-to-user-namespace
   brew install macvim -- --override-system-vim
   brew install node
   brew install kdiff3
@@ -29,11 +30,15 @@ npm install -g standard
 . link.sh
 
 # Permissions for dotfiles
-chmod +x ~/imgls
-chmod +x ~/dotfiles/imgls
+chmod +x ~/imgls # not working... not sure if necessary?
+chmod +x ~/dotfiles/imgls # not working...
 alias imgls='~/.imgls'
 
 # Create swp file directory
 mkdir ~/.vim/swapfiles
 
 git config --add merge.tool kdiff3
+
+# TODO
+# cp iterm preferences to ~/Library/Preferences/com.googlecode.iterm2.plist
+# https://apple.stackexchange.com/questions/140622/where-does-iterm-store-user-preferences
