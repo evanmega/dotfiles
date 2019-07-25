@@ -53,7 +53,7 @@ set -o vi
 function editNote() {
   cd ~/Google\ Drive/notes/
   echo "select file:"
-  select d in *.txt; do test -n "$d" && break; echo ">>> Invalid Selection"; done
+  select d in *.{txt,md}; do test -n "$d" && break; echo ">>> Invalid Selection"; done
   vim "$d"
 }
 export -f editNote
