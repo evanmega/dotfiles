@@ -1,0 +1,45 @@
+{
+  "files.autoSave": "afterDelay",
+    "editor.fontFamily": "Source Code Pro, Menlo, Monaco, 'Courier New', monospace",
+    "editor.minimap.enabled": false,
+    "editor.formatOnPaste": true,
+    "editor.tabSize": 2,
+    "vim.useSystemClipboard": true,
+    "workbench.colorTheme": "LaserWave",
+    "editor.scrollbar.horizontal": "hidden",
+    "editor.scrollbar.vertical": "hidden",
+    "editor.overviewRulerBorder": false,
+    "workbench.startupEditor": "newUntitledFile",
+    "editor.showFoldingControls": "always",
+    "editor.foldingStrategy": "indentation",
+    "window.zoomLevel": 0,
+    "editor.acceptSuggestionOnCommitCharacter": false,
+    "gitlens.views.repositories.location": "gitlens",
+    "gitlens.views.fileHistory.location": "gitlens",
+    "gitlens.views.lineHistory.location": "gitlens",
+    "gitlens.views.compare.location": "gitlens",
+    "gitlens.views.search.location": "gitlens",
+    "[xml]": {
+    
+  },
+  "[Log]": {
+		"editor.fontSize": 10
+	},
+  "[json]": {
+    
+  },
+  "vim.foldfix": true,
+  "vim.normalModeKeyBindingsNonRecursive": [
+    {
+      "before": ["<leader>", "a"],
+      "commands": ["workbench.action.toggleSidebarVisibility"]
+    }
+  ],
+  "vim.leader": ",",
+  "npm.enableScriptExplorer": true,
+  "editor.fontSize": 13,
+  "debug.console.fontSize": 11,
+  "search.smartCase": true,
+  "javascript.updateImportsOnFileMove.enabled": "always",
+  "explorer.confirmDragAndDrop": false
+}

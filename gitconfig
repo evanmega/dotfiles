@@ -3,7 +3,7 @@
 	name = Evan Mega
 [core]
 	excludesfile = /Users/evan/.gitignore_global
-	editor = /usr/bin/vim
+	editor = vim
 [difftool "sourcetree"]
 	cmd = opendiff \"$LOCAL\" \"$REMOTE\"
 	path = 
@@ -34,11 +34,13 @@
   cob = checkout -b
   # list branches sorted by last modified
   b = "!git for-each-ref --sort='-authordate' --format='%(authordate)%09%(objectname:short)%09%(refname)' refs/heads | sed -e 's-refs/heads/--'"
+  pushup = "!git push --set-upstream origin $(git symbolic-ref --short HEAD)"
+  bname = rev-parse --abbrev-ref HEAD
+  sfe = submodule foreach
 
   # list aliases
   la = "!git config -l | grep alias | cut -c 7-"
 
-  po = !echo 'Ah push it...' && git push origin && echo 'push it real good'
 [mergetool "Kaleidoscope"]
 	cmd = ksdiff --merge --output \"$MERGED\" --base \"$BASE\" -- \"$LOCAL\" --snapshot \"$REMOTE\" --snapshot
 	trustexitcode = true
